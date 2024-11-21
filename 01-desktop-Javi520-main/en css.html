@@ -1,0 +1,32 @@
+en css
+noseque {
+    font-family: "fuente1, fuente2, fuente3, fuente4, ...., fuente_n";
+    font-size:24px;
+    font-size:calc(noseque)
+}
+
+button.loading img {
+    opacity: 0;
+}
+
+button.loading:after {
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+/*probar en modo responsive ;)
+validator.w3.org*/
+/*se puede cambiar la clase del boton para cuando esté cargando y el css ya
+se "encarga"
+el navegador comprueba las reglas para ver si tiene que cambiar cacharros
+element.classList.[add|remove]('classname');*/
+/*
+font-family:
+    recomendacion de que las fuentes sean parecidas, pues de no haber la fuente1
+    se intentará usar la fuente2, sino ....
+    fuente_n podría o debería ser una fuente como "serif" genérica
+    podría darse "URL's" para descargarse la fuente
+font-size:
+    si el navegador no implementa "calc", se queda, en teoría con el primer dato
+*/
